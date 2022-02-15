@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="js/stock.js"></script>
+    
+</head>
+
+<body>
+    <div id="login" data-role="page" data-title="GCC Stock" data-theme="b">
+
+        <div data-role="header" data-position="fixed">
+            <h4>GCC Stock</h4>
+        </div>
+
+        <div data-role="content">
+            <h4>Login</h4>
+            <input type="text" id="userLogin">    
+            <button id="buttonLogin" onclick="access()">Submit</button>
+            <label for="" id="feedback">Access:</label>
+        </div>
+    
+        <div data-role="footer" data-position="fixed">
+            <h4>GCC Stock</h4>
+        </div>
+    
+    </div>
+
+    <!-- Screen 2 -->
+
+    <div id="menu" data-role="page" data-title="GCC Stock" data-theme="b">
+
+        <div data-role="header" data-position="fixed">
+            <h4>GCC Stock</h4>
+        </div>
+
+        <div data-role="content">
+            <h4>Menu</h4>
+           
+            <div data-role="collapsibleset" data-theme="b" data-content-theme="b">
+
+                <div data-role="collapsible">
+                    <h3>Display Stock Levels</h3>
+                    <p>The stock levels are:</p>
+                    <p id="stocklevel"></p>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3>Add Stock</h3>
+                    <p>Add The ammount of Stock to be added:</p>
+                    <input type="text" id="addS">
+                    <button onclick="add()">Confirm</button>
+                    <p id="confirmAdd">Details:</p>
+                </div>
+                
+                <div data-role="collapsible">
+                    <h3>Delate Stock</h3>
+                    <p>Add The ammount of Stock to be Delate:</p>
+                    <input type="text" id="delS">
+                    <button onclick="del()">Confirm</button>
+                    <p id="confirmDel">Details:</p>
+                </div>
+                
+                <div data-role="collapsible">
+                    <h3>Log Off</h3>
+                    <p>Are You Sure You Want To Log Off?</p>
+                    <button onclick="closeMenu()">Log Out</button>
+                    <p id="confirmLogoff">Details:</p>
+                </div>
+
+            </div>
+
+
+        </div>
+    
+        <div data-role="footer" data-position="fixed">
+            <h4>GCC Stock</h4>
+        </div>
+    
+    </div>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
